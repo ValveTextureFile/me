@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>linux w/ fender mustang lt25 amp support type thing | vtf</title>
+
+    <meta
+        name="description"
+        content="HID stuff, protobuf, and a Mustang LT25"
+    >
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+    <link
+        rel="stylesheet"
+        href="/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/blog/style.css"
+    >
+</head>
+
+<body>
+
+
+<main class="article-page">
+
+    <article class="panel article">
+
+        <span class="label">
+            blog
+        </span>
+
+        <header class="article-header">
+
+            <h1>
+                linux w/ fender mustang lt25 amp support type thing
+            </h1>
+
+            <time datetime="2026-09-16T23:57:05">
+                September 16, 2026
+            </time>
+
+        </header>
+
+        <div class="article-content">
+            <p>i currently have a Fender Mustang LT25 guitar amplifer that I also use for my bass, and I started to wonder:</p>
+<blockquote>
+<p>how could i possibly control my amp on my arch desktop?</p>
+</blockquote>
+<p>so i lowk got to work</p>
+<h2 id="finding-the-amp">finding the amp</h2>
+<p>quick lsusb and udevadm lead me to getting the vendor and product id of the amp:</p>
+<pre><code class="language-text">VID: 1ed8
+PID: 0037
+interface: 0
+</code></pre>
+<p>there is this awesome guy i found while researching the communication layer between the amp and Fender Tone (the standard desktop app that fender provides for controlling the amp.), and he made protocol buffers for the Fender Mustang LT25 anyway, so that was a <strong>RELIEF</strong> that i dont have to touch ghidra for reverse engineering.</p>
+<p>The repo is <a href="https://github.com/brentmaxwell/LtAmp">here</a> if you wanna look at it. its a neat lil c# library + app which i find great.</p>
+<h2 id="current-progress-report">current progress report</h2>
+<p>its actually doing pretty well ngl.</p>
+<p>other than the fact i need to study to get my SAT score up the project itself is going well.</p>
+<p>right now as i write, the project (guit2. i came with it on the spot dont ask might change later) is done with communcations from host to amp, and now needs to get a syncing state done so i can make a middle ground between the front and back end for the amp presets.</p>
+        </div>
+
+        <a
+            class="article-back"
+            href="/blog/"
+        >
+            ← blog and todo
+        </a>
+
+    </article>
+
+</main>
+
+
+<footer class="site-footer">
+    © 2026 vtf · made with care
+</footer>
+
+</body>
+
+</html>
