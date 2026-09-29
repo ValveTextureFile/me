@@ -31,3 +31,8 @@ other than the fact i need to study to get my SAT score up the project itself is
 
 right now as i write, the project (guit2. i came with it on the spot dont ask might change later) is done with communcations from host to amp, and now needs to get a syncing state done so i can make a middle ground between the front and back end for the amp presets.
 
+__Edit__
+> i forgot to mention that the repository for this project is private and hosted on GitHub
+> i plan to make it public once i reach a state that guit2's fully working and able to edit
+> presets, amp settings, n other stuff.
+

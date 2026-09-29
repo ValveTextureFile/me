@@ -142,51 +142,118 @@
 
 
 /* =========================================================
-   ARTICLE PAGE
+   ARTICLE
    ========================================================= */
 
 .article-page {
     position: relative;
     z-index: 1;
 
-    width: min(900px, calc(100% - 32px));
-    margin: 32px auto;
+    width: min(820px, calc(100% - 40px));
+    margin: 55px auto 35px;
 }
 
 .article {
-    padding: 32px;
+    padding: 0;
 }
 
+
+/* header */
+
 .article-header {
-    margin: 20px 0 36px;
+    margin: 20px 0 42px;
 }
 
 .article-header h1 {
-    margin-bottom: 8px;
+    margin: 12px 0 14px;
+
+    line-height: 1.05;
 }
 
 .article-header time {
+    display: block;
+
+    margin: 0;
+
     color: var(--faint);
-    font-size: 0.7em;
+
+    font-size: 0.75rem;
 }
+
+
+/* =========================================================
+   ARTICLE CONTENT RHYTHM
+   ========================================================= */
 
 .article-content {
-    line-height: 1.7;
+    line-height: 1.65;
 }
 
+
+/* remove browser default spacing */
+
+.article-content p,
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content blockquote,
+.article-content pre,
+.article-content ul,
+.article-content ol {
+    margin-top: 0;
+}
+
+
+/* paragraphs */
+
 .article-content p {
+    margin-bottom: 18px;
+
     color: var(--muted);
 }
 
-.article-content img {
-    max-width: 100%;
-    height: auto;
+
+/* headings */
+
+.article-content h2 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+
+    line-height: 1.15;
 }
 
+.article-content h3 {
+    margin-top: 26px;
+    margin-bottom: 10px;
+
+    line-height: 1.2;
+}
+
+
+/* quote */
+
+.article-content blockquote {
+    margin: 18px 0 22px;
+    padding-left: 22px;
+
+    border-left: 2px solid var(--border-strong);
+
+    color: var(--muted);
+}
+
+.article-content blockquote p {
+    margin: 0;
+}
+
+
+/* code blocks */
+
 .article-content pre {
-    overflow-x: auto;
+    margin: 18px 0 22px;
 
     padding: 18px;
+
+    overflow-x: auto;
 
     background: var(--card-soft);
 
@@ -198,10 +265,38 @@
     font-family: monospace;
 }
 
+
+/* images */
+
+.article-content img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+
+    margin: 24px 0;
+}
+
+
+/* lists */
+
+.article-content ul,
+.article-content ol {
+    margin-bottom: 18px;
+    padding-left: 28px;
+}
+
+.article-content li {
+    margin: 6px 0;
+}
+
+
+/* bottom navigation */
+
 .article-back {
     display: inline-block;
 
-    margin-top: 40px;
+    margin-top: 34px;
 
     color: var(--text);
     text-decoration: none;
@@ -210,7 +305,6 @@
 .article-back:hover {
     text-decoration: underline;
 }
-
 
 /* =========================================================
    FOOTER
