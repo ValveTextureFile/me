@@ -1,6 +1,6 @@
 ---
 title: guit2 update
-date: 2026-09-20 
+date: 2026-09-20
 slug: fender-linux-upd
 description: a decent update to the fender lt project
 ---
