@@ -1,6 +1,6 @@
 ---
 title: im making frc bindings for rust...
-date: 2026-09-20 
+date: 2026-09-29
 slug: rust-frc-bindings
 description: a little side project, not completly replacing guit2
 ---
